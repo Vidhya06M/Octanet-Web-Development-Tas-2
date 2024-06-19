@@ -1,0 +1,154 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #000; /* Change color to black for all links */
+    font-size: 1.1em;
+    padding: 5px 10px; /* Add padding for better visibility */
+    background-color: #fff; /* Add background color to white */
+    border-radius: 4px; /* Add border radius for smoother edges */
+}
+
+.navbar nav ul li a:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+}
+
+/* Container Styles */
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Increased width */
+    margin-top: 50px;
+    color: #000;
+}
+
+.scroll-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Increased font size */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+    flex: 1;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px; /* Added margin for spacing between buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    flex: 1;
+    margin: 0 5px; /* Added margin for spacing between filter buttons */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+li .task-text {
+    flex: 1;
+}
+
+li .task-date {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+li button {
+    margin-left: 10px;
+}

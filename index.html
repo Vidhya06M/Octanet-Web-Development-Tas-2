@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">ToDo List</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#" class="home-services">Services</a></li>
+                <li><a href="#" class="contacts">Contacts</a></li>
+                <li><a href="#" class="sign-in">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="scroll-container">
+            <h2>Your Tasks</h2>
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <input type="date" id="due-date">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <div class="filters">
+                <button id="all-tasks-btn">All</button>
+                <button id="active-tasks-btn">Active</button>
+                <button id="completed-tasks-btn">Completed</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
